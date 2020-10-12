@@ -2,6 +2,8 @@
 
 ## Advanced Web Applications ➡ Testing React
 
+h
+
 ### Objectives
 
 - use mocks in unit tests
@@ -55,7 +57,7 @@ export const fetchShow = () => {
   return axios.get
     .then(res => return res) // or res.data, however you want to set that up
 }
-  
+
  // App.js
 useEffect(() => {
   fetchShow
