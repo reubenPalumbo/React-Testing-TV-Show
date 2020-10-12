@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export default function fetchShow(setShow, setSeasons, formatSeasons) {
+export function fetchShow() {
   return axios
     .get(
       "https://api.tvmaze.com/singlesearch/shows?q=stranger-things&embed=episodes"
@@ -9,3 +9,5 @@ export default function fetchShow(setShow, setSeasons, formatSeasons) {
       return res;
     });
 }
+
+export default fetchShow;

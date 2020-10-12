@@ -1,13 +1,13 @@
 import React from "react";
-import { render, screen, fireEvent, wait } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 
-import { fetchShow as mockFetchShow } from "../api/fetchShow";
 import Episodes from "./Episodes";
-jest.mock("../api/fetchShow");
 
 describe("Episodes Tests", () => {
   test("renders without errors", () => {
     render(<Episodes episodes={fakeData.episodes} />);
+
+    expect(screen.queryAllByTestId("ep")).toHaveLength(3);
   });
 });
 
