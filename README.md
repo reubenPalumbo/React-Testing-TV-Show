@@ -2,6 +2,8 @@
 
 ## Advanced Web Applications ➡ Testing React
 
+h
+
 ### Objectives
 
 - use mocks in unit tests
@@ -32,7 +34,7 @@ Follow these steps for completing your project.
 
 ### Instructions and/or completion requirements
 
-Your challenge for this module: write tests for both the `App.js` component and the `Episodesjs` component. Take note of where the state is being managed, where the async call is, and where different data peices are being rendered. Understanding all of this will be important so you know how to test each component.
+Your challenge for this module: write tests for both the `App.js` component and the `Episodes.js` component. Take note of where the state is being managed, where the async call is, and where different data pieces are being rendered. Understanding all of this will be important so you know how to test each component.
 
 **Moving the async call**
 
@@ -55,7 +57,7 @@ export const fetchShow = () => {
   return axios.get
     .then(res => return res) // or res.data, however you want to set that up
 }
-  
+
  // App.js
 useEffect(() => {
   fetchShow
